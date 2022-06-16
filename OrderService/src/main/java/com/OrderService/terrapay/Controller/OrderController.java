@@ -7,12 +7,14 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.OrderService.terrapay.Entity.Order;
 import com.OrderService.terrapay.Service.OrderService;
 
 @RestController
+@RequestMapping("/order")
 public class OrderController {
 	@Autowired
 	private OrderService orderservice;
@@ -30,5 +32,6 @@ public class OrderController {
        public Optional<Order> getOrderByPincode(@PathVariable Integer  pincode) {
     	   return orderservice.getOrderByPinCode(pincode);
        }
-       
-}
+
+	}
+      

@@ -7,6 +7,9 @@ import com.OrderService.terrapay.Entity.Order;
 
 @Repository
 public interface OrderRepository extends JpaRepository<Order, Integer>{
+
+	Object getOrderByPinCode(Integer pincode);
+
 	
 
 }

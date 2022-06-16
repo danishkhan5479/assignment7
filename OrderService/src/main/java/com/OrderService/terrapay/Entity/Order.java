@@ -25,10 +25,5 @@ public class Order {
 	public void setOrderDate(int orderDate) {
 		this.orderDate = orderDate;
 	}
-	
-
-	 
-	 
-	
 
 }

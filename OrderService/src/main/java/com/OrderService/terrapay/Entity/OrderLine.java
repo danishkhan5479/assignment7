@@ -29,4 +29,8 @@ public class OrderLine {
 	public void setETA(int eTA) {
 		ETA = eTA;
 	}
+	public void setrestName(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 }
